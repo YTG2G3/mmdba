@@ -1,9 +1,18 @@
-html,
-body {
-  padding: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'SUIT', 'sans-serif';
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
 }
 
 a {
@@ -15,12 +24,14 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button {
+  font-family: 'SUIT', 'sans-serif';
+  cursor: pointer;
+}
+
+input {
+  font-family: 'SUIT', 'sans-serif';
+  border: none;
+  outline: none;
+  min-width: none;
 }

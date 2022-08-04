@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import Head from 'next/head';
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps: { session, ...pageProps } }) {
+    return (
+        <>
+            <Head>
+                <title>MentaMorph Database Admin</title>
+            </Head>
+
+            <Component {...pageProps} />
+        </>
+    );
 }
-
-export default MyApp
