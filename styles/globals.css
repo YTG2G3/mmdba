@@ -27,6 +27,11 @@ a {
 button {
   font-family: 'SUIT', 'sans-serif';
   cursor: pointer;
+  border: none;
+  padding: 0;
+  min-height: 0;
+  margin: 0;
+  background-color: transparent;
 }
 
 input {
