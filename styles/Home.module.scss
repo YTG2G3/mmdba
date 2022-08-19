@@ -35,7 +35,10 @@
     align-items: center;
     height: calc(100% - 36px);
 
-    button {
+    button,
+    a {
+        font-size: medium;
+        text-align: center;
         background-color: #6027CE;
         width: 40%;
         margin-bottom: 20px;

@@ -1,27 +1,48 @@
 {
-    "scenario_theme": "",
-    "scenario_level": 0,
-    "scenario_role": "",
-    "scenario_rounds": 0,
-    "scenario_dialogue": [],
-    "scenario_inflow": [],
-    "scenario_outflow": [],
-    "scenario_assets": [],
-    "scenario_liabilities": [],
-    "round_inflow_fixed": [],
-    "round_inflow_variable": [],
-    "round_outflow_weekly": [],
-    "round_outflow_monthly": [],
-    "round_event_id": [],
-    "round_event_value": [],
-    "round_assets_mentacards": [],
-    "round_assets_mentablocks": [],
-    "round_assets_toytrains": [],
-    "round_assets_car": [],
-    "round_assets_savings": [],
-    "round_liabilities_loan": [],
-    "round_liabilities_creditcard": [],
-    "round_dialogue_intro": [],
-    "round_dialogue_outro": [],
-    "event": []
+    "theme": [],
+    "level": [],
+    "role": [],
+    "rounds": [],
+    "scenario_intro": [
+        "text",
+        "image"
+    ],
+    "inflow": [
+        "type",
+        "item",
+        "amount",
+        "image"
+    ],
+    "outflow": [
+        "type",
+        "item",
+        "amount",
+        "image"
+    ],
+    "asset": [
+        "type",
+        "item",
+        "amount",
+        "image"
+    ],
+    "liability": [
+        "type",
+        "item",
+        "amount",
+        "image"
+    ],
+    "round_intro": [
+        "text"
+    ],
+    "round_outro": [
+        "text"
+    ],
+    "event": [
+        "id",
+        "round",
+        "category",
+        "descriptor",
+        "dialogue",
+        "cost"
+    ]
 }

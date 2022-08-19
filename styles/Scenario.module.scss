@@ -1,0 +1,123 @@
+.arrow {
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        border: solid gray;
+        border-width: 0 10px 10px 0;
+    }
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list {
+    height: 100vh;
+    padding: 0 30vw;
+    overflow: auto;
+}
+
+.savebtn {
+    background-color: #6027CE;
+    transition: 0.2s;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin: 20px 0;
+
+    &:hover {
+        background-color: #8c66d8;
+    }
+}
+
+.single {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+
+    div {
+        display: flex;
+
+        button {
+            background-color: #6027CE;
+            color: white;
+            border-radius: 20px;
+            padding: 0 10px;
+            margin-left: 10px;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #8c66d8;
+            }
+        }
+    }
+
+    h3 {
+        color: gray;
+        margin-bottom: 20px;
+    }
+}
+
+.multiple {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+
+    h3 {
+        color: gray;
+        margin-bottom: 20px;
+    }
+
+    div[name=title] {
+        display: flex;
+
+        button {
+            background-color: #6027CE;
+            color: white;
+            border-radius: 20px;
+            padding: 0 10px;
+            margin-left: 10px;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #8c66d8;
+            }
+        }
+    }
+
+    div[name=grid] {
+        display: grid;
+
+        label {
+            text-align: center;
+            color: gray;
+            border-bottom: 1px solid black;
+            padding: 5px 5px;
+        }
+
+        input {
+            padding: 5px 5px;
+        }
+    }
+}

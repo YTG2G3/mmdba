@@ -18,8 +18,7 @@ export default async function handler(req, res) {
     else if (req.method === 'POST') {
         let scenarioName = req.query.name;
 
-        if (scenarioName) await scenario.doc(scenarioName).set(req.body);
-        else await scenario.add(req.body);
+        await scenario.doc(scenarioName).set(req.body);
 
         res.status(200).end();
     }
