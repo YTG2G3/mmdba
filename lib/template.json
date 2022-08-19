@@ -11,12 +11,14 @@
         "type",
         "item",
         "amount",
+        "percentage",
         "image"
     ],
     "outflow": [
         "type",
         "item",
         "amount",
+        "percentage",
         "image"
     ],
     "asset": [

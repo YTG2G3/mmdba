@@ -91,7 +91,6 @@ function InputBox({ fb, data, editScenario }) {
                 ret.push(tmp);
             }
 
-            console.log(ret);
             editScenario(fb, ret);
         }
     }
