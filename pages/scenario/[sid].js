@@ -50,19 +50,18 @@ function InputBox({ fb, data, editScenario }) {
     let vector = template[fb];
 
     const formatText = (str) => {
-        // Convert to number
-        if (str.startsWith("(num)")) return Number(str.substring(5));
-
         // Convert to array
-        if (str.startsWith("(arr)")) return str.substring(5).split(",").map(v => formatText(v));
+        if (str.indexOf(",") > -1) return str.substring(5).split(",").map(v => isNaN(v) ? v.trim() : Number(v));
+
+        // Convert to number
+        if (!isNaN(str)) return Number(str);
 
         // Just string
-        return str;
+        return str.trim();
     }
 
     const formatObj = (obj) => {
-        if (typeof obj === Number) return "(num)" + obj;
-        if (typeof obj === Array) return "(arr)" + obj.join(",");
+        if (typeof obj === "object") return obj.join(",");
 
         return String(obj);
     }
