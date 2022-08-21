@@ -50,8 +50,10 @@ function InputBox({ fb, data, editScenario }) {
     let vector = template[fb];
 
     const formatText = (str) => {
+        if (str.trim() === "") return "";
+
         // Convert to array
-        if (str.indexOf(",") > -1) return str.substring(5).split(",").map(v => isNaN(v) ? v.trim() : Number(v));
+        if (str.indexOf(",") > -1) return str.split(",").map(v => v.trim() === "" || isNaN(v) ? v.trim() : Number(v));
 
         // Convert to number
         if (!isNaN(str)) return Number(str);
